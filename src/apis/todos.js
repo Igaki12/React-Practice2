@@ -4,6 +4,7 @@ const todoDataUrl = "http://localhost:3100/todos";
 
 export const getAllTodosData = async() =>{
   const response = await axios.get(todoDataUrl);
+  console.log(response.data);
   return response.data;
 };
 export const addTodoData = async(todo) => {
