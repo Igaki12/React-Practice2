@@ -28,7 +28,7 @@ function App(){
   return (
     <>
       <TodoTitle title="TODO進捗状況" as="h1" />
-      <TodoAdd inputEl={inputEl} handleAddTodoListItem={handleAddTodoListItem} />
+      <TodoAdd inputEl={inputEl} handleAddTodoListItem={handleAddTodoListItem} buttonText={"+TODOを追加"} />
       <TodoTitle title="未完了リスト" as="h2" />
       <TodoList todoList={inCompletedList} toggleTodoListItemStatus={toggleTodoListItemStatus} deleteTodoListItem={deleteTodoListItem} />
       <TodoTitle title="完了リスト" as="h2" />

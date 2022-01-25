@@ -1,4 +1,4 @@
-export const TodoAdd = ({buttonText,inputEl,handleAddtodoListItem}) => {
+export const TodoAdd = ({buttonText,inputEl,handleAddTodoListItem}) => {
   return (
     <>
     <textarea ref={inputEl} />

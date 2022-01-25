@@ -1,4 +1,3 @@
-import { deleteTodoData } from "../apis/todos";
 
 export const TodoItem = ({todo,toggleTodoListItemStatus,deleteTodoListItem})=> {
   const handleToggleTodoListItemStatus = () => toggleTodoListItemStatus(todo.id,todo.done);
