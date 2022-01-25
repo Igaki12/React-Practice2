@@ -13,12 +13,12 @@
     {
       "id": 3,
       "content": "Chakra UI をインストールする",
-      "done": false
+      "done": true
     },
     {
       "content": "バイトの面接に行く",
       "id": "01FT77778YRYVWD76C7AVZVDCT",
-      "done": false
+      "done": true
     },
     {
       "content": "次のReact自作アプリのネタを考える",
