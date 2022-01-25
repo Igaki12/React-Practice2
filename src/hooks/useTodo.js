@@ -1,11 +1,11 @@
 import { useState,useEffect } from "react";
 import {ulid} from "ulid";
 
-import * as todoData from "../apis/todos";
+import * as todoData from "../apis/todos.js";
 
 export const useTodo = () => {
   const[todoList,setTodoList] = useState([]);
-  useEffect = (() => {
+  useEffect(() => {
     todoData.getAllTodosData().then((todo)=> {
       setTodoList([...todo].reverse());
     });
@@ -21,7 +21,7 @@ export const useTodo = () => {
   const addTodoListItem = (todoContent)=> {
     const newTodoItem = {
       content:todoContent,
-      id:ulid(),
+      id: ulid(),
       done:false
     };
     return todoData.addTodoData(newTodoItem).then((addTodo) => {
