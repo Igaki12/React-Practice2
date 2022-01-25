@@ -1,5 +1,8 @@
 import React,{useRef} from "react";
 import {useTodo} from "../hooks/useTodo";
+import {TodoTitle} from "./TodoTitle";
+import {TodoAdd} from "./TodoAdd";
+import {TodoList} from "./TodoList";
 
 const TodoTitle = ({title,as}) => {
   if(as === "h1") return <h1>{title}</h1>
