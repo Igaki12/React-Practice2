@@ -7,17 +7,10 @@ import App from "./components/App";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <ChakraProvider theme={theme} resetCSS={false}>
+    <ChakraProvider theme={theme}>
       <App />
     </ChakraProvider>
   </StrictMode>,
   rootElement
-)
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
 );
 
