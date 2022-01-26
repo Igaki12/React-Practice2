@@ -10,7 +10,7 @@ export const TodoAdd = ({
     <>
     <Textarea 
       placeholder={placeholder}
-      bgcolor="white"
+      bgColor="white"
       mt="8"
       borderColor="gray.400"
       ref={inputEl} />
